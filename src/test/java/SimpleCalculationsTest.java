@@ -54,7 +54,7 @@ class SimpleCalculationsTest {
     }
 
     @Test
-    public void toUppercaseTest_whenHello_thenHELLO(){
+    public void toUppercaseTest_whenHello_thenReturnHELLO(){
         String s = "Hello";
 
         String actual = SimpleCalculations.toUpperCase(s);
@@ -62,5 +62,23 @@ class SimpleCalculationsTest {
         assertEquals("HELLO", actual);
     }
 
+    @Test
+    public void checkPositive_when5_thenReturnTrue(){
+        int a = 5;
+
+        boolean actual = SimpleCalculations.checkPositive(a);
+
+        assertTrue(actual);
+    }
+
+
+    @Test
+    public void checkPositive_whenMinus5_thenReturnFalse(){
+        int a = -5;
+
+        boolean actual = SimpleCalculations.checkPositive(a);
+
+        assertFalse(actual);
+    }
 
 }

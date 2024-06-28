@@ -19,5 +19,10 @@ public class SimpleCalculations {
         return s.toUpperCase();
     }
 
-
+    public static boolean checkPositive(int a) {
+        if (a > 0) {
+            return true;
+        }
+        return false;
+    }
 }
