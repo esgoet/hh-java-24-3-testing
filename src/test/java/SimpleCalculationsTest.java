@@ -41,5 +41,26 @@ class SimpleCalculationsTest {
         assertFalse(actual);
     }
 
+    @Test
+    public void multiplyTest_when7and6_thenReturn42() {
+        //GIVEN
+        int a = 7;
+        int b = 6;
+        //WHEN
+        int actual = SimpleCalculations.multiply(a,b);
+
+        //THEN
+        assertEquals(42, actual);
+    }
+
+    @Test
+    public void toUppercaseTest_whenHello_thenHELLO(){
+        String s = "Hello";
+
+        String actual = SimpleCalculations.toUpperCase(s);
+
+        assertEquals("HELLO", actual);
+    }
+
 
 }
